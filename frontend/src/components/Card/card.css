@@ -1,0 +1,122 @@
+.analyze_container_upper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: auto;
+  background-color: var(--color-light);
+}
+.profile_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  overflow-x: auto;
+}
+
+.profile-card {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  margin-top: 2rem;
+  flex: 1 1 auto;
+
+  height: auto;
+  margin-top: 2rem;
+  flex: 1 1 auto;
+}
+
+.profile-card-header {
+  position: relative;
+  margin-top: 5.8rem;
+  margin-left: 2rem;
+}
+
+/* .profile-card-banner {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+} */
+
+.profile-card-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid white;
+}
+
+.profile-card-body {
+  padding: 20px 20px 5px 20px;
+  margin-left: 2rem;
+}
+
+.profile-card-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 2.5rem;
+}
+
+.profile-card-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.profile-card-stats {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 2rem;
+}
+
+.profile-card-stat {
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.profile-card-stat-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-card-stat-label {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.profile-card-actions {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.profile-card-action-button:first-child {
+  background-color: #333;
+}
+
+.profile-card-action-button:last-child {
+  background-color: #4caf50;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile_container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    overflow-x: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .analyze_container h3 {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
